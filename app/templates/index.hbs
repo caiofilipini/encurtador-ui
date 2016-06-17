@@ -1,0 +1,20 @@
+<h2>URLs</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Destination</th>
+      <th>Created at</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |url|}}
+      <tr>
+        <td>{{url.id}}</td>
+        <td><a href="{{url.destination}}">{{url.destination}}</a></td>
+        <td>{{url.createdAt}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
