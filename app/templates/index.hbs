@@ -1,20 +1,22 @@
-<h2>URLs</h2>
+<div class="urls">
+  <h2>URLs</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Destination</th>
-      <th>Created at</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model as |url|}}
+  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    <thead>
       <tr>
-        <td>{{url.id}}</td>
-        <td><a href="{{url.destination}}">{{url.destination}}</a></td>
-        <td>{{url.createdAt}}</td>
+        <th class="mdl-data-table__cell--non-numeric">Id</th>
+        <th class="mdl-data-table__cell--non-numeric">Destination</th>
+        <th class="mdl-data-table__cell--non-numeric">Created at</th>
       </tr>
-    {{/each}}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {{#each model as |url|}}
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric url-id">{{url.id}}</td>
+          <td class="mdl-data-table__cell--non-numeric"><a href="{{url.destination}}">{{url.destination}}</a></td>
+          <td class="mdl-data-table__cell--non-numeric">{{url.createdAt}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

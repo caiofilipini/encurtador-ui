@@ -1,0 +1,16 @@
+body {
+    background-color: #eee;
+}
+
+.ember-view {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.urls {
+    text-align: left;
+}
+
+.url-id {
+    font-weight: bold;
+}
